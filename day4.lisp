@@ -36,3 +36,23 @@
 
 (defun day4/solution1 ()
   (apply #'+ (mapcar #'room-id (real-rooms (read-room-list)))))
+
+(defun shift (character n)
+  (let ((base-code (char-code #\a)))
+    (if (char= character #\-)
+        #\Space
+        (code-char
+         (+ base-code (mod (+ n (- (char-code character) base-code))
+                           26))))))
+
+(defun decrypt-room-name (room)
+  (let ((room-id (room-id room)))
+    (coerce (loop for c across room
+                  collect (shift c room-id))
+            'string)))
+
+(defun day4/solution2 ()
+  (loop for room in (read-room-list)
+        when (string= (decrypt-room-name room)
+                      "northpole object storage pklboterhd")
+          return (room-id room)))

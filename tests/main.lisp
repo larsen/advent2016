@@ -13,4 +13,5 @@
   (is (= (advent2016:day3/solution2) 1921)))
 
 (test day4
-  (is (= (advent2016:day4/solution1) 137896)))
+  (is (= (advent2016:day4/solution1) 137896))
+  (is (= (advent2016:day4/solution2) 501)))
