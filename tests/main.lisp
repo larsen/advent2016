@@ -15,3 +15,12 @@
 (test day4
   (is (= (advent2016:day4/solution1) 137896))
   (is (= (advent2016:day4/solution2) 501)))
+
+;; SLOW
+;; (test day5
+;;   (string= (advent2016:day5/solution1 "abbhdwsy") "801b56a7")
+;;   (string= (advent2016:day5/solution2 "abbhdwsy") "424a0197"))
+
+(test day6
+  (is (string= (advent2016:day6/solution1) "gyvwpxaz"))
+  (is (string= (advent2016:day6/solution2) "jucfoary")))

@@ -6,12 +6,14 @@
   :license  "Specify license here"
   :version "0.0.1"
   :serial t
-  :depends-on (#:cl-ppcre)
+  :depends-on (#:cl-ppcre #:md5)
   :components ((:file "package")
                (:file "day1")
                (:file "day2")
                (:file "day3")
                (:file "day4")
+               (:file "day5")
+               (:file "day6")
                (:file "utils"))
   :in-order-to ((test-op (test-op #:advent2016/test))))
 
