@@ -16,7 +16,7 @@
   (is (= (advent2016:day4/solution1) 137896))
   (is (= (advent2016:day4/solution2) 501)))
 
-;; SLOW
+;; Slow
 ;; (test day5
 ;;   (string= (advent2016:day5/solution1 "abbhdwsy") "801b56a7")
 ;;   (string= (advent2016:day5/solution2 "abbhdwsy") "424a0197"))
