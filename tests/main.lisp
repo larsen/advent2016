@@ -26,5 +26,5 @@
   (is (string= (advent2016:day6/solution2) "jucfoary")))
 
 (test day7
-  (is (= (advent2016:day7/solution1) 0))
-  (is (= (advent2016:day7/solution2) 0)))
+  (is (= (advent2016:day7/solution1) 105))
+  (is (= (advent2016:day7/solution2) 258)))
