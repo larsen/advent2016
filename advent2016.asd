@@ -6,7 +6,7 @@
   :license  "Specify license here"
   :version "0.0.1"
   :serial t
-  :depends-on (#:cl-ppcre #:md5)
+  :depends-on (#:cl-ppcre #:md5 #:fiveam)
   :components ((:file "package")
                (:file "day1")
                (:file "day2")
