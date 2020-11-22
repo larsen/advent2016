@@ -31,4 +31,4 @@
 
 (test day8
   (is (= (advent2016:day8/solution1) 119))
-  (is (= (advent2016:day8/solution2) 0)))
+  (is (string= (advent2016:day8/solution2) "ZFHFSFOGPO")))

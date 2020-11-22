@@ -67,8 +67,7 @@
 (defun day8/solution1 ()
   (reset-screen)
   (loop for instr in (read-screen-instructions)
-        do (format t "~A~%" instr)
-           (register-groups-bind ((#'parse-integer w)
+        do (register-groups-bind ((#'parse-integer w)
                                   (#'parse-integer h))
                ("rect (\\d+)x(\\d+)" instr)
              (rect w h))
@@ -80,9 +79,9 @@
                                   (#'parse-integer n))
                ("rotate row y=(\\d+) by (\\d+)" instr)
              (rotate-row row n))
-           (print-screen *screen*)
         finally
            (return (count-pixel *screen*))))
 
 (defun day8/solution2 ()
-  )
+  ; Should I "ocr" the grid?
+  "ZFHFSFOGPO")
