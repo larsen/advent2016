@@ -4,7 +4,7 @@
   (:use #:cl #:cl-ppcre #:md5)
   (:export day1/solution1
            day1/solution2
-          
+
            day2/solution1
            day2/solution2
 
@@ -24,7 +24,10 @@
            day7/solution2
 
            day8/solution1
-           day8/solution2))
+           day8/solution2
+
+           day9/solution
+           decompress))
 
 (defpackage #:advent2016/test
   (:use #:cl

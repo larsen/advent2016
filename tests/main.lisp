@@ -1,5 +1,8 @@
 (in-package #:advent2016/test)
 
+(def-suite advent2016)
+(in-suite advent2016)
+
 (test day1
   (is (= (advent2016:day1/solution1) 273))
   (is (= (advent2016:day1/solution2) 115)))
@@ -32,3 +35,12 @@
 (test day8
   (is (= (advent2016:day8/solution1) 119))
   (is (string= (advent2016:day8/solution2) "ZFHFSFOGPO")))
+
+(test day9
+  (is (= (length (decompress "ADVENT")) 6))
+  (is (= (length (decompress "A(1x5)BC")) 7))
+  (is (= (length (decompress "(3x3)XYZ")) 9))
+  (is (= (length (decompress "A(2x2)BCD(2x2)EFG")) 11))
+  (is (= (length (decompress "(6x1)(1x3)A")) 6))
+  (is (= (length (decompress "X(8x2)(3x3)ABCY")) 18))
+  (is (= (day9/solution) 150914)))
